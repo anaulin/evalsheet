@@ -61,3 +61,7 @@ The implementation converts all operands to the Python type
 `float`, which in turn leads to unnecessary decimal points and zeros in the
 resulting output. This could be made more elegant with more careful string
 formatting when converting the evaluation results to string.
+
+This code has not been tested with cell references that go into the double letters
+(e.g. 'AA3'). Although the implementation takes the possibility of such a cell
+reference into account, the output might or might not be correct.
