@@ -145,5 +145,5 @@ if __name__ == "__main__":
 
   print 'Loading sheet:', args.filename
   s = Sheet.from_file(args.filename)
-
   print 'Writing evaluated sheet to:', args.out
+  s.eval_to_csv(args.out)
